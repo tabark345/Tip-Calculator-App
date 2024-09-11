@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="container">
+    <img src="/images/logo.svg" alt="logo">
+    <div class="card">
+      <div class="card-left">
+        <div class="input-bill">
+          <label for="bill">Bill</label>
+          <div class="input-all">
+            <img src="/images/icon-dollar.svg" alt="person">
+            <input type="number" placeholder="0" dir="rtl" id="bill">
+          </div>
+        </div>
+        <div class="select-tip">
+          <p>Select Tip %</p>
+          <div class="tip-buttons">
+            <button id="tip-5">5%</button>
+            <button id="tip-10">10%</button>
+            <button id="tip-15">15%</button>
+            <button id="tip-25">25%</button>
+            <button id="tip-50">50%</button>
+            <input type="text" placeholder="Custom" dir="rtl" id="custom-tip">
+          </div>
+        </div>
+        <div class="input-people">
+          <label for="people">Number of People</label>
+          <div class="input-all">
+            <span id="error-people" style="color: red;"></span> <!-- Add this line -->
+            <img src="/images/icon-person.svg" alt="person">
+            <input type="number" placeholder="0" dir="rtl" id="people">
+          </div>
+        </div>
+      </div>
+      <div class="card-right">
+        <div class="all-amount">
+          <div class="tip-amount">
+            <div class="label">
+              <h4>Tip Amount</h4>
+              <p>/ person</p>
+            </div>
+            <h1 id="tip-amount">
+              <img src="/images/icon-dollar-cyan.svg" alt="dollar">0.00
+            </h1>
+          </div>
+          <div class="total-amount">
+            <div class="label">
+              <h4>Total</h4>
+              <p>/ person</p>
+            </div>
+            <h1 id="total-amount">
+              <img src="/images/icon-dollar-cyan.svg" alt="dollar">0.00
+            </h1>
+          </div>
+        </div>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
